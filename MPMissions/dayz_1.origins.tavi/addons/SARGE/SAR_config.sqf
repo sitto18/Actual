@@ -81,7 +81,7 @@ SAR_FIX_VEHICLE_ISSUE = false;
 SAR_surv_kill_value = 500;
 
 // Humanity Value that gets ADDED for a bandit AI kill
-SAR_band_kill_value = 200;
+SAR_band_kill_value = 300;
 
 // the humanity value below which a player will be considered hostile
 SAR_HUMANITY_HOSTILE_LIMIT = -2500;
@@ -285,19 +285,19 @@ R_knowsAboutEnemy = 0.9;
 // IMPORTANT: The leader types must be different to each other! So you need 3 different leader types here!
 
 // military AI
-SAR_leader_sold_list = ["Rocket_DZ"]; // the potential classes of the leader of a soldier group
+SAR_leader_sold_list = ["Hero3_4DZ"]; // the potential classes of the leader of a soldier group
 SAR_sniper_sold_list = ["Sniper1_DZ"]; // the potential classes of the snipers of a soldier group
-SAR_soldier_sold_list = ["Soldier1_DZ","Camo1_DZ"]; // the potential classes of the riflemen of a soldier group
+SAR_soldier_sold_list = ["Hero3_6DZ","Hero3_2DZ"]; // the potential classes of the riflemen of a soldier group
 
 // bandit AI
 SAR_leader_band_list = ["Bandit1_DZ"]; // the potential classes of the leader of a bandit group
-SAR_sniper_band_list = ["Sniper1_DZ"]; // the potential classes of the snipers of a bandit group
-SAR_soldier_band_list = ["Bandit1_DZ", "BanditW1_DZ","Soldier_Crew_PMC"]; // the potential classes of the riflemen of a bandit group
+SAR_sniper_band_list = ["ori_vil_woman_bandit_4"]; // the potential classes of the snipers of a bandit group
+SAR_soldier_band_list = ["Bandit3_1", "Bandit1_3_1DZ","Bandit2_2DZ"]; // the potential classes of the riflemen of a bandit group
 
 // survivor AI
-SAR_leader_surv_list = ["Survivor3_DZ"]; // the potential classes of the leaders of a survivor group
-SAR_sniper_surv_list = ["Sniper1_DZ"]; // the potential classes of the snipers of a survivor group
-SAR_soldier_surv_list = ["Survivor2_DZ","SurvivorW2_DZ","Soldier_Crew_PMC"]; // the potential classes of the riflemen of a survivor group
+SAR_leader_surv_list = ["Hero1_5DZ"]; // the potential classes of the leaders of a survivor group
+SAR_sniper_surv_list = ["Hero3_4DZ"]; // the potential classes of the snipers of a survivor group
+SAR_soldier_surv_list = ["Hero1_1DZ","Hero1_3DZ","Hero1_4DZ"]; // the potential classes of the riflemen of a survivor group
 
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -467,7 +467,7 @@ SAR_sniper_surv_skills = [
 
 // potential weapon list for leaders
 // SAR_sold_leader_weapon_list = ["M4A1","M4A3_CCO_EP1","AK_47_M"];
-SAR_sold_leader_weapon_list = ["M16A4_ACOG","M4A3_CCO_EP1","FN_FAL_ANPVS4","BAF_L85A2_UGL_ACOG"];
+SAR_sold_leader_weapon_list = ["M4A1_Aim","M4A3_CCO_EP1","FN_FAL_ANPVS4","BAF_L85A2_UGL_ACOG"];
 SAR_sold_leader_pistol_list = [];   
 
 // potential item list for leaders -> Item / Chance 1 - 100
