@@ -12,7 +12,7 @@ class Header
 {
  gameType = COOP;            //DM, Team, Coop, ...
  minPlayers = 1;             //min # of players the mission supports
- maxPlayers = 100;            //Max # of players the mission supports
+ maxPlayers = 20;            //Max # of players the mission supports
 };
 
 aiKills = 1;
@@ -142,5 +142,5 @@ class DayZ_loadingScreen
 		};
 	};
 };
-
+//Sarge's AI
 #include "addons\SARGE\SAR_define.hpp"

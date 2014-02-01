@@ -20,15 +20,15 @@ _camera camSetRelPos [0,0,2];
 _camera camCommit 8;
  
 cutText [_welcomeMessage, "PLAIN DOWN"];
-sleep 4;
+sleep 2;
 cutText ["Se comenta que estan sucediendo cosas extrañas","PLAIN DOWN"];
-sleep 4;
+sleep 2;
 cutText ["Algunos hablan de flechazos en partes localizadas de la pierna","PLAIN DOWN"];
-sleep 4;
+sleep 2;
 cutText ["Otros citan historias casi imposibles de primos que estan en el frente","PLAIN DOWN"];
-sleep 4;
+sleep 2;
 cutText ["Incluso se habla de que han acontecido lo que denominan VERDADERAS BESTIALIDADES","PLAIN DOWN"];
-sleep 4;
+sleep 2;
 cutText ["Si quieres saber por que la gente sufre en este server, permanece a la espera","PLAIN DOWN"];
 
  
