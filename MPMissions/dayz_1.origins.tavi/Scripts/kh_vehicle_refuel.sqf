@@ -19,7 +19,7 @@ if (!ib_refueling_in_progress) then
     {
         ib_refueling_in_progress = true;
  
-        titleText ["Repostando", "PLAIN", 3];
+        titleText ["Repostando...", "PLAIN", 3];
  
         while {(vehicle _caller == _target) and (local _target)} do
         {

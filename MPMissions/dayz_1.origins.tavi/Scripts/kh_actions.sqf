@@ -24,7 +24,7 @@ while {true} do
             {
                 _vehicle = _currentVehicle;
  
-                _vehicle_refuel_id = _vehicle addAction ["Refuel", "Scripts\kh_vehicle_refuel.sqf", [], -1, false, false, "",
+                _vehicle_refuel_id = _vehicle addAction ["Auto Repostaje", "Scripts\kh_vehicle_refuel.sqf", [], -1, false, false, "",
                   "vehicle _this == _target && local _target"];
             };
         };

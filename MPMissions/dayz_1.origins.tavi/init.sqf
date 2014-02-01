@@ -74,7 +74,7 @@ if (!isDedicated) then {
 	_nul = [] execVM "Camera\loginCamera.sqf";
 
 	//Remove the double slashes on the line below to enable auto refuelling
-	//[] execVM "Scripts\kh_actions.sqf";
+	[] execVM "Scripts\kh_actions.sqf";
 };
 
 //Adjust here for time of day/night (Current setting is 3hr day/night)
