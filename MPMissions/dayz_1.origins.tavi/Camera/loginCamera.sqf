@@ -21,9 +21,16 @@ _camera camCommit 8;
  
 cutText [_welcomeMessage, "PLAIN DOWN"];
 sleep 4;
-cutText ["NO respeteis a los demas jugadores","PLAIN DOWN"];
+cutText ["Se comenta que estan sucediendo cosas extrañas","PLAIN DOWN"];
 sleep 4;
-cutText ["Hablad en el chat si os parece, aqui no hay reglas","PLAIN DOWN"];
+cutText ["Algunos hablan de flechazos en partes localizadas de la pierna","PLAIN DOWN"];
+sleep 4;
+cutText ["Otros citan historias casi imposibles de primos que estan en el frente","PLAIN DOWN"];
+sleep 4;
+cutText ["Incluso se habla de que han acontecido lo que denominan VERDADERAS BESTIALIDADES","PLAIN DOWN"];
+sleep 4;
+cutText ["Si quieres saber por que la gente sufre en este server, permanece a la espera","PLAIN DOWN"];
+
  
 waitUntil {camCommitted _camera};
  
