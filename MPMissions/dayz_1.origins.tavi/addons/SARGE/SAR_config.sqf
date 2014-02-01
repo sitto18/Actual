@@ -111,21 +111,21 @@ SAR_AI_XP_SYSTEM = true;
 // xp needed to reach this level
 SAR_AI_XP_LVL_1 = 0;
 // name of the level range
-SAR_AI_XP_NAME_1 = "Lvl. 1";
+SAR_AI_XP_NAME_1 = "Lvl.1";
 // armor specific for this level
 SAR_AI_XP_ARMOR_1 = 1;        // values: 0.1 - 1, 1 = no change, 0.5 = damage taken reduced by 50%, 0.1 = damage taken reduced by 90%
 
 // xp needed to reach this level
 SAR_AI_XP_LVL_2 = 5;
 // name of the level range
-SAR_AI_XP_NAME_2 = "Lvl. 2";
+SAR_AI_XP_NAME_2 = "Lvl.2";
 // armor specific for this level
 SAR_AI_XP_ARMOR_2 = 0.5;        // values: 0.1 - 1, 1 = no change, 0.5 = damage taken reduced by 50%, 0.1 = damage taken reduced by 90% 
 
 // xp needed to reach this level
 SAR_AI_XP_LVL_3 = 20;
 // name of the level range
-SAR_AI_XP_NAME_3 = "Lvl. 3";
+SAR_AI_XP_NAME_3 = "Lvl.3";
 // armor specific for this level
 SAR_AI_XP_ARMOR_3 = 0.3;        // values: 0 - 1, 1 = no change, 0.5 = damage taken reduced by 50%, 0.1 = damage taken reduced by 90% 
 
@@ -190,7 +190,7 @@ SAR_REAMMO_INTERVAL = 40;
 SAR_HITKILL_DEBUG = true;
 
 // Shows extra debug info in .rpt
-SAR_DEBUG = true;
+SAR_DEBUG = false;
 
 // careful with setting this, this shows a LOT, including the grid properties and definitions for every spawn and despawn event
 SAR_EXTREME_DEBUG = false;
@@ -485,7 +485,7 @@ SAR_sold_rifleman_tools = [["ItemMap",50],["ItemCompass",30]];
 
 //potential weapon list for snipers
 // SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","Huntingrifle"];
-SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","M24","SVD_NSPU_EP1","m107","FN_FAL","FN_FAL_ANPVS4","Mk_48_DZ","M249_DZ","BAF_L85A2_RIS_Holo","G36C","G36C_camo","G36A_camo","G36K_camo","AK_47_M","AKS_74_U","M14_EP1","bizon_silenced","DMR","RPK_74","KSVK"];
+SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","M24","SVD_NSPU_EP1","m107","FN_FAL","FN_FAL_ANPVS4","Mk_48_DZ","M249_DZ","BAF_L85A2_RIS_Holo","G36C","G36C_camo","G36A_camo","G36K_camo","AK_47_M","AKS_74_U","M14_EP1","bizon_silenced","DMR","RPK_74","KSVK_DZE","BAF_AS50_scoped_DZ","SCAR_H_LNG_Sniper_SD"];
 SAR_sold_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -513,7 +513,7 @@ SAR_surv_rifleman_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60]];
 SAR_surv_rifleman_tools = [["ItemMap",50],["ItemCompass",30]];
 
 //potential weapon list for snipers
-SAR_surv_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","KSVK_DZN","m107"];
+SAR_surv_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","KSVK_DZE","m107"];
 SAR_surv_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -543,7 +543,7 @@ SAR_band_rifleman_tools = [["ItemMap",50],["ItemCompass",30],["Binocular_Vector"
 
 //potential weapon list for snipers
 // SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","Huntingrifle"];
-SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","M24","DMR","m107","BAF_AS50_scoped_DZ","SCAR_H_LNG_Sniper_SD"];
+SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","M24","DMR","m107","BAF_AS50_scoped_DZ","SCAR_H_LNG_Sniper_SD","KSVK_DZE"];
 SAR_band_sniper_pistol_list = [];   
 
 // potential item list for snipers

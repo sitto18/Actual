@@ -2,7 +2,7 @@ private ["_isAir","_inVehicle","_dateNow","_maxZombies","_dist","_age","_radius"
 _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
-_maxZombies = 80;
+_maxZombies = 2000;
 _dist = [22600,19600,0] distance player;
 // if ( _dist < 500 ) exitWith {};
 _age = -1;
@@ -37,32 +37,32 @@ _nearby = nearestObjects [_position, ["building"], _radius];
 switch (_nearbytype) do {
 	default {
 		// _maxZombies = 60;
-		_maxZombies = 80;
+		_maxZombies = 100;
 	};
 	case "NameLocal": {
 		// _maxZombies = 40;
-		_maxZombies = 60;
+		_maxZombies = 80;
 	};
 	case "NameVillage": {
 		// _maxZombies = 40;
-		_maxZombies = 60;
+		_maxZombies = 80;
 	};
 	case "NameCity": {
 		// _maxZombies = 40;
-		_maxZombies = 60;
+		_maxZombies = 80;
 	};
 	case "NameCityCapital": {
 		// _maxZombies = 55;
-		_maxZombies = 80;
+		_maxZombies = 200;
 	};
 };
 
 //diag_log ("nearbytype: " +str(_nearbytype));
 if (_inVehicle) then {
 	// _maxZombies = 4;
-	_maxZombies = 8;
+	_maxZombies = 15;
 };
-	_tooManyZs = count (_position nearEntities ["zZombie_Base",400]) > 12;
+	_tooManyZs = count (_position nearEntities ["zZombie_Base",400]) > 50;
 	//diag_log("Too Many Zeds: " +str(_tooManyZs));
     //diag_log(format["SPAWN CHECK: Building count is %1", count _nearby]);
 	_count = ({alive _x} count allMissionObjects "zZombie_Base");
