@@ -35,22 +35,22 @@ SAR_DEBUGMONITOR= false;
 // SAR_max_grps_bandits = 1;
 // SAR_max_grps_soldiers = 1;
 // SAR_max_grps_survivors = 1;
-SAR_max_grps_bandits = 3;
-SAR_max_grps_soldiers = 2;
+SAR_max_grps_bandits = 5;
+SAR_max_grps_soldiers = 3;
 SAR_max_grps_survivors = 2;
 
 // chance for a group to spawn (1-100)
 // SAR_chance_bandits = 75;
 // SAR_chance_soldiers = 30;
 // SAR_chance_survivors = 50;
-SAR_chance_bandits = 80;
-SAR_chance_soldiers = 30;
+SAR_chance_bandits = 85;
+SAR_chance_soldiers = 40;
 SAR_chance_survivors = 20;
 
 // maximum size of group (including Leader)
- SAR_max_grpsize_bandits = 4;
+ SAR_max_grpsize_bandits = 6;
  SAR_max_grpsize_soldiers = 5;
- SAR_max_grpsize_survivors = 4;
+ SAR_max_grpsize_survivors = 3;
 // SAR_max_grpsize_bandits = 5;
 // SAR_max_grpsize_soldiers = 6;
 // SAR_max_grpsize_survivors = 5;
@@ -111,21 +111,21 @@ SAR_AI_XP_SYSTEM = true;
 // xp needed to reach this level
 SAR_AI_XP_LVL_1 = 0;
 // name of the level range
-SAR_AI_XP_NAME_1 = "Rookie";
+SAR_AI_XP_NAME_1 = "Lvl. 1";
 // armor specific for this level
 SAR_AI_XP_ARMOR_1 = 1;        // values: 0.1 - 1, 1 = no change, 0.5 = damage taken reduced by 50%, 0.1 = damage taken reduced by 90%
 
 // xp needed to reach this level
 SAR_AI_XP_LVL_2 = 5;
 // name of the level range
-SAR_AI_XP_NAME_2 = "Veteran";
+SAR_AI_XP_NAME_2 = "Lvl. 2";
 // armor specific for this level
 SAR_AI_XP_ARMOR_2 = 0.5;        // values: 0.1 - 1, 1 = no change, 0.5 = damage taken reduced by 50%, 0.1 = damage taken reduced by 90% 
 
 // xp needed to reach this level
 SAR_AI_XP_LVL_3 = 20;
 // name of the level range
-SAR_AI_XP_NAME_3 = "Legendary";
+SAR_AI_XP_NAME_3 = "Lvl. 3";
 // armor specific for this level
 SAR_AI_XP_ARMOR_3 = 0.3;        // values: 0 - 1, 1 = no change, 0.5 = damage taken reduced by 50%, 0.1 = damage taken reduced by 90% 
 
@@ -164,7 +164,7 @@ SAR_DELETE_TIMEOUT = 480; // 8 minutes
 // -----------------------------------------------
 
 // the max range in meters within AI is detecting Zombies and player bandits and makes them hostile - the bigger this value, the more CPU needed
- SAR_DETECT_HOSTILE = 250;
+ SAR_DETECT_HOSTILE = 400;
 //SAR_DETECT_HOSTILE = 250;
 
 // the max range in meters within AI is detecting player bandits from a vehicle, e.g. heli or land vehicle and makes them hostile - the bigger this value, the more CPU needed
@@ -180,17 +180,17 @@ SAR_DELETE_TIMEOUT = 480; // 8 minutes
 //SAR_DETECT_FROM_VEHICLE_INTERVAL = 4;
 
 // the interval in seconds after that AI and AI in vehicles get new ammo and new fuel if needed
-SAR_REAMMO_INTERVAL = 30;
+SAR_REAMMO_INTERVAL = 40;
 
 // -----------------------------------------------
 // Debug options
 // -----------------------------------------------
 
 // Show AI hits and kills by players in the rpt
-SAR_HITKILL_DEBUG = false;
+SAR_HITKILL_DEBUG = true;
 
 // Shows extra debug info in .rpt
-SAR_DEBUG = false;
+SAR_DEBUG = true;
 
 // careful with setting this, this shows a LOT, including the grid properties and definitions for every spawn and despawn event
 SAR_EXTREME_DEBUG = false;
@@ -271,7 +271,7 @@ KRON_UPS_Res_enemy = [east];
 //
 //                      2.5 -> easy
 //
-R_knowsAboutEnemy = 0.9;
+R_knowsAboutEnemy = 0.7;
 
 //
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -287,17 +287,17 @@ R_knowsAboutEnemy = 0.9;
 // military AI
 SAR_leader_sold_list = ["Hero3_4DZ"]; // the potential classes of the leader of a soldier group
 SAR_sniper_sold_list = ["Sniper1_DZ"]; // the potential classes of the snipers of a soldier group
-SAR_soldier_sold_list = ["Hero3_6DZ","Hero3_2DZ"]; // the potential classes of the riflemen of a soldier group
+SAR_soldier_sold_list = ["Hero3_6DZ","Hero3_2DZ","Hero3_3DZ","Hero3_5DZ","Hero3_1DZ"]; // the potential classes of the riflemen of a soldier group
 
 // bandit AI
 SAR_leader_band_list = ["Bandit1_DZ"]; // the potential classes of the leader of a bandit group
 SAR_sniper_band_list = ["ori_vil_woman_bandit_4"]; // the potential classes of the snipers of a bandit group
-SAR_soldier_band_list = ["Bandit3_1", "Bandit1_3_1DZ","Bandit2_2DZ"]; // the potential classes of the riflemen of a bandit group
+SAR_soldier_band_list = ["Bandit3_1", "Bandit1_3_1DZ","Bandit2_2DZ,ori_vil_woman_bandit_6","ori_vil_woman_bandit_5","ori_vil_woman_bandit_3","ori_vil_woman_bandit_2","ori_vil_woman_bandit_1","Bandit3_1","Bandit2_5DZ","Bandit2_4DZ","Bandit2_3DZ","Bandit2_2DZ","Bandit2_1DZ","Bandit1_3_2DZ","Bandit1_3_1DZ","Bandit1_3DZ","Bandit1_2DZ","Bandit1_1DZ"]; // the potential classes of the riflemen of a bandit group
 
 // survivor AI
-SAR_leader_surv_list = ["Hero1_5DZ"]; // the potential classes of the leaders of a survivor group
-SAR_sniper_surv_list = ["Hero3_4DZ"]; // the potential classes of the snipers of a survivor group
-SAR_soldier_surv_list = ["Hero1_1DZ","Hero1_3DZ","Hero1_4DZ"]; // the potential classes of the riflemen of a survivor group
+SAR_leader_surv_list = ["Hero1_5DZ","Hero2_1DZ","Hero2_2DZ","Hero2_3DZ","Hero2_4DZ","Hero2_5DZ","Hero2_10DZ"]; // the potential classes of the leaders of a survivor group
+SAR_sniper_surv_list = ["Hero1_4DZ"]; // the potential classes of the snipers of a survivor group
+SAR_soldier_surv_list = ["Hero1_1DZ","Hero1_3DZ","Hero1_2DZ","ori_vil_woman_survivor_1","ori_vil_woman_survivor_2","ori_vil_woman_survivor_3","ori_vil_woman_survivor_4","ori_vil_woman_survivor_5","ori_vil_woman_survivor_6","SurvivorW2_DZ","ori_vil_woman_hero_1","ori_vil_woman_hero_2","ori_vil_woman_hero_3","ori_vil_woman_hero_4","ori_vil_woman_hero_5","ori_vil_woman_hero_6"]; // the potential classes of the riflemen of a survivor group
 
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -467,16 +467,16 @@ SAR_sniper_surv_skills = [
 
 // potential weapon list for leaders
 // SAR_sold_leader_weapon_list = ["M4A1","M4A3_CCO_EP1","AK_47_M"];
-SAR_sold_leader_weapon_list = ["M4A1_Aim","M4A3_CCO_EP1","FN_FAL_ANPVS4","BAF_L85A2_UGL_ACOG"];
+SAR_sold_leader_weapon_list = ["M16A2","M16A2GL","M249_DZ","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","SVD_CAMO","M1014","DMR","M4A1","M14_EP1","Remington870_lamp","M240_DZ","M4A1_AIM_SD_camo","M16A4_ACG","M4A1_HWS_GL_camo","Mk_48_DZ","M4A3_CCO_EP1","Sa58V_RCO_EP1","Sa58V_CCO_EP1","M40A3","Sa58P_EP1","Sa58V_EP1","FN_FAL_ANPVS4","BAF_L85A2_UGL_ACOG"];
 SAR_sold_leader_pistol_list = [];   
 
 // potential item list for leaders -> Item / Chance 1 - 100
-SAR_sold_leader_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60],["ItemPainkiller",50]];
-SAR_sold_leader_tools =  [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",5],["NVGoggles",70],["ItemRadio",50]];
+SAR_sold_leader_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60],["ItemPainkiller",50],["ItemBandage",70],["ItemMorphine",40]];
+SAR_sold_leader_tools =  [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",5],["NVGoggles",70],["ItemRadio",50],["ItemToolbox",10]];
 
 //potential weapon list for riflemen
 // SAR_sold_rifleman_weapon_list = ["M16A2","Winchester1866","AK_74","LeeEnfield","M1014"];
-SAR_sold_rifleman_weapon_list = ["M16A2","Mk_48_DZ","AKS_74_Kobra"/*,"M249_EP1_DZ"*/];
+SAR_sold_rifleman_weapon_list = ["M16A2","M16A2GL","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","M1014","DMR","M4A1","M14_EP1","Remington870_lamp","MP5A5","MP5SD","M4A3_CCO_EP1","Mk_48_DZ","AKS_74_Kobra","M249_EP1_DZ"];
 SAR_sold_rifleman_pistol_list = [];    
 
 // potential item list for riflemen
@@ -485,7 +485,7 @@ SAR_sold_rifleman_tools = [["ItemMap",50],["ItemCompass",30]];
 
 //potential weapon list for snipers
 // SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","Huntingrifle"];
-SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","M24","SVD_NSPU_EP1"];
+SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","M24","SVD_NSPU_EP1","m107","FN_FAL","FN_FAL_ANPVS4","Mk_48_DZ","M249_DZ","BAF_L85A2_RIS_Holo","G36C","G36C_camo","G36A_camo","G36K_camo","AK_47_M","AKS_74_U","M14_EP1","bizon_silenced","DMR","RPK_74","KSVK"];
 SAR_sold_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -497,15 +497,15 @@ SAR_sold_sniper_tools = [["ItemMap",50],["ItemCompass",30]];
 //
 
 // potential weapon list for leaders
-SAR_surv_leader_weapon_list = ["M4A1","MP5SD","AK_107_GL_kobra"];
+SAR_surv_leader_weapon_list = ["M16A2","M16A2GL","M249_DZ","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","SVD_CAMO","M1014","DMR","M4A1","M14_EP1","Remington870_lamp","M240_DZ","M4A1_AIM_SD_camo","M16A4_ACG","M4A1_HWS_GL_camo","Mk_48_DZ","M4A3_CCO_EP1","Sa58V_RCO_EP1","Sa58V_CCO_EP1","M40A3","Sa58P_EP1","Sa58V_EP1"];
 SAR_surv_leader_pistol_list = [];   
 
 // potential item list for leaders -> Item / Chance 1 - 100
-SAR_surv_leader_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60],["ItemPainkiller",50]];
-SAR_surv_leader_tools =  [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",5],["NVGoggles",10],["ItemRadio",50]];
+SAR_surv_leader_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60],["ItemPainkiller",50],["ItemBandage",70],["ItemMorphine",40]];
+SAR_surv_leader_tools =  [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",5],["NVGoggles",10],["ItemRadio",50],["ItemToolbox",10]];
 
 //potential weapon list for riflemen
-SAR_surv_rifleman_weapon_list = ["M16A2","Winchester1866","AK_74","LeeEnfield","M1014"];
+SAR_surv_rifleman_weapon_list = ["M16A2","M16A2GL","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","M1014","DMR","M4A1","M14_EP1","Remington870_lamp","MP5A5","MP5SD","M4A3_CCO_EP1"];
 SAR_surv_rifleman_pistol_list = [];    
 
 // potential item list for riflemen
@@ -513,7 +513,7 @@ SAR_surv_rifleman_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60]];
 SAR_surv_rifleman_tools = [["ItemMap",50],["ItemCompass",30]];
 
 //potential weapon list for snipers
-SAR_surv_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR"];
+SAR_surv_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","KSVK_DZN","m107"];
 SAR_surv_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -525,16 +525,16 @@ SAR_surv_sniper_tools = [["ItemMap",50],["ItemCompass",30]];
 //
 
 // potential weapon list for leaders
-SAR_band_leader_weapon_list = ["M4A1","M4A3_CCO_EP1","AK_47_M"];
+SAR_band_leader_weapon_list = ["M16A2","M16A2GL","M249_DZ","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","SVD_CAMO","M1014","DMR","M4A1","M14_EP1","Remington870_lamp","M240_DZ","M4A1_AIM_SD_camo","M16A4_ACG","M4A1_HWS_GL_camo","Mk_48_DZ","M4A3_CCO_EP1","Sa58V_RCO_EP1","Sa58V_CCO_EP1","M40A3","Sa58P_EP1","Sa58V_EP1"];
 SAR_band_leader_pistol_list = [];   
 
 // potential item list for leaders -> Item / Chance 1 - 100
-SAR_band_leader_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60],["ItemPainkiller",50]];
-SAR_band_leader_tools =  [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",5],["NVGoggles",5],["ItemRadio",100]];
+SAR_band_leader_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60],["ItemPainkiller",50],["ItemBandage",70],["ItemMorphine",40]];
+SAR_band_leader_tools =  [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",5],["NVGoggles",5],["ItemRadio",100],["ItemToolbox",10]];
 
 //potential weapon list for riflemen
 // SAR_band_rifleman_weapon_list = ["M16A2","Winchester1866","AK_74","LeeEnfield","M1014"];
-SAR_band_rifleman_weapon_list = ["M16A2","BAF_L85A2_UGL_ACOG","AKS_74_UN_kobra","LeeEnfield","M1014"];
+SAR_band_rifleman_weapon_list = ["M16A2","M16A2GL","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","M1014","DMR","M4A1","M14_EP1","Remington870_lamp","MP5A5","MP5SD","M4A3_CCO_EP1"];
 SAR_band_rifleman_pistol_list = [];    
 
 // potential item list for riflemen
@@ -543,7 +543,7 @@ SAR_band_rifleman_tools = [["ItemMap",50],["ItemCompass",30],["Binocular_Vector"
 
 //potential weapon list for snipers
 // SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","Huntingrifle"];
-SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","M24","DMR"];
+SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","M24","DMR","m107","BAF_AS50_scoped_DZ","SCAR_H_LNG_Sniper_SD"];
 SAR_band_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -556,5 +556,4 @@ SAR_band_sniper_tools = [["ItemMap",50],["ItemCompass",30],["Binocular_Vector",3
 // ---------------------------------------------------------------------------------------------------------------------
 
 // define the type of heli(s) you want to use here for the heli patrols - make sure you include helis that have minimum 2 gunner positions, anything else might fail
-//SAR_heli_type=["UH1H_DZ","Mi17_DZ"];
-SAR_heli_type=["UH1H_DZ"];
+SAR_heli_type=["UH1H_DZ","Mi17_DZ"];

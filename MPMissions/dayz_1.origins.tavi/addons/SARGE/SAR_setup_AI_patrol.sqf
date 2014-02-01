@@ -105,7 +105,7 @@ _leader addEventHandler ["HandleDamage",{if (_this select 1!="") then {_unit=_th
 
 _cond="(side _this == west) && (side _target == resistance) && ('ItemBloodbag' in magazines _this)";
 
-[nil,_leader,rADDACTION,"Give me a blood transfusion!", "addons\SARGE\SAR_interact.sqf","",1,true,true,"",_cond] call RE;
+[nil,_leader,rADDACTION,"Dame transfusion!", "addons\SARGE\SAR_interact.sqf","",1,true,true,"",_cond] call RE;
  
 [_leader] joinSilent _group;
 

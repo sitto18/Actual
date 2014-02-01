@@ -90,8 +90,8 @@ this number is randomized
     // LES SPICAK, 1 bandit groups, 0 soldier groups, 2 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
     _check = [["max_grps","rnd_grps","max_p_grp"],[[1,0,2],[80,0,60],[2,0,2]],"SAR_area_1_1"] call SAR_AI_mon_upd; 
 
-    // BRANIBOR, 3 bandit groups, 1 soldier groups, 3 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
-    _check = [["max_grps","rnd_grps","max_p_grp"],[[3,1,3],[60,50,75],[2,3,3]],"SAR_area_2_1"] call SAR_AI_mon_upd;
+    // BRANIBOR, 6 bandit groups, 1 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
+    _check = [["max_grps","rnd_grps","max_p_grp"],[[6,1,1],[60,50,75],[2,3,3]],"SAR_area_2_1"] call SAR_AI_mon_upd;
 
     // WATER, 0 bandit groups, 0 soldier groups, 0 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
     _check = [["max_grps","rnd_grps","max_p_grp"],[[0,0,0],[0,0,0],[0,0,0]],"SAR_area_3_1"] call SAR_AI_mon_upd;		
@@ -102,11 +102,11 @@ this number is randomized
     // NIZHINA, 0 bandit groups, 3 soldier groups, 3 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
     _check = [["max_grps","rnd_grps","max_p_grp"],[[0,3,3],[0,50,75],[0,2,4]],"SAR_area_5_1"] call SAR_AI_mon_upd; 
 
-    // MITROVICE, 3 bandit groups, 2 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
-    _check = [["max_grps","rnd_grps","max_p_grp"],[[3,2,1],[90,50,75],[4,2,4]],"SAR_area_0_2"] call SAR_AI_mon_upd; 
+    // MITROVICE, 4 bandit groups, 2 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
+    _check = [["max_grps","rnd_grps","max_p_grp"],[[4,2,1],[90,50,75],[4,2,4]],"SAR_area_0_2"] call SAR_AI_mon_upd; 
 
-    // BILGRAD, 3 bandit groups, 1 soldier groups, 3 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
-    _check = [["max_grps","rnd_grps","max_p_grp"],[[3,1,3],[50,50,50],[3,3,3]],"SAR_area_1_2"] call SAR_AI_mon_upd; 
+    // BILGRAD, 5 bandit groups, 1 soldier groups, 3 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
+    _check = [["max_grps","rnd_grps","max_p_grp"],[[5,1,3],[50,50,50],[3,3,3]],"SAR_area_1_2"] call SAR_AI_mon_upd; 
 
     // KRASNOZNAMENSK, 2 bandit groups, 3 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
     _check = [["max_grps","rnd_grps","max_p_grp"],[[2,3,1],[75,50,75],[3,4,4]],"SAR_area_2_2"] call SAR_AI_mon_upd; 
@@ -123,11 +123,11 @@ this number is randomized
     // WATER, 0 bandit groups, 0 soldier groups, 0 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
     _check = [["max_grps","rnd_grps","max_p_grp"],[[0,0,0],[0,0,0],[0,0,0]],"SAR_area_0_3"] call SAR_AI_mon_upd;		
 
-    // CHERNOVAR, 2 bandit groups, 1 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
-    _check = [["max_grps","rnd_grps","max_p_grp"],[[2,1,1],[75,30,50],[3,2,3]],"SAR_area_1_3"] call SAR_AI_mon_upd; 
+    // CHERNOVAR, 6 bandit groups, 5 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
+    _check = [["max_grps","rnd_grps","max_p_grp"],[[6,5,1],[75,30,50],[3,2,3]],"SAR_area_1_3"] call SAR_AI_mon_upd; 
 
-    // ARMY_BASE, 0 bandit groups, 3 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
-    _check = [["max_grps","rnd_grps","max_p_grp"],[[0,3,1],[0,75,75],[0,3,6]],"SAR_area_2_3"] call SAR_AI_mon_upd;
+    // ARMY_BASE, 0 bandit groups, 5 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
+    _check = [["max_grps","rnd_grps","max_p_grp"],[[0,5,1],[0,75,75],[0,3,6]],"SAR_area_2_3"] call SAR_AI_mon_upd;
 
     // ETANOVSK, 3 bandit groups, 1 soldier groups, 1 survivor groups - spawn probability ba,so,su - maximum group members ba,so,su
     _check = [["max_grps","rnd_grps","max_p_grp"],[[3,1,1],[75,75,75],[3,4,2]],"SAR_area_3_3"] call SAR_AI_mon_upd;
@@ -260,7 +260,7 @@ this number is randomized
     SAR_marker_helipatrol_branibor = _this;
 
 	
-	// Bandit Car patrol Branivor -----------------
+	// Military Car patrol Branivor -----------------
 	_this = createMarker ["SAR_marker_car_bandBranibor_veh", [5700.47, 6000.07]];
 	_this setMarkerShape "RECTANGLE";
 	_this setMarkeralpha 0;
@@ -270,7 +270,7 @@ this number is randomized
 	_this setMarkerDir -78.0;
 	SAR_marker_car_bandBranibor = _this;
  
-	// Bandit Car patrol Mitro -----------------
+	// Military Car patrol Mitro -----------------
 	_this = createMarker ["SAR_marker_car_bandMitro_veh", [3800.9, 7444.15]];
 	_this setMarkerShape "RECTANGLE";
 	_this setMarkeralpha 0;
@@ -280,7 +280,7 @@ this number is randomized
 	_this setMarkerDir -358.0;
 	SAR_marker_car_bandMitro = _this;
  
-	// Bandit Car patrol Airport -----------------
+	// Military Car patrol Airport -----------------
 	_this = createMarker ["SAR_marker_car_bandAirport_veh", [7000.39, 8200.75]];
 	_this setMarkerShape "RECTANGLE";
 	_this setMarkeralpha 0;
@@ -322,6 +322,11 @@ diag_log format["SAR_AI: Static Spawning for Helicopter patrols started"];
     
     //Heli patrol Branibor
     [SAR_marker_helipatrol_branibor,1] call SAR_AI_heli;
+
+diag_log format["SAR_AI: Static Spawning for Helicopter patrols finished"];
+
+
+diag_log format["SAR_AI: Static Spawning for Land patrols started"];
 	
 	// Bandit Car Patrol Mitrovice
 	[SAR_marker_car_bandMitro,1,["UAZ_MG_DZ"],[[1,2,1]],true,60] call SAR_AI_land;
@@ -337,7 +342,7 @@ diag_log format["SAR_AI: Static Spawning for Helicopter patrols started"];
 
     
     
-diag_log format["SAR_AI: Static Spawning for Helicopter patrols finished"];
+diag_log format["SAR_AI: Static Spawning for Land patrols finished"];
 
 //---------------------------------------------------------------------------------
 // Static, predefined infantry patrols in defined areas with configurable units
