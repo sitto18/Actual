@@ -292,7 +292,7 @@ SAR_soldier_sold_list = ["Hero3_6DZ","Hero3_2DZ","Hero3_3DZ","Hero3_5DZ","Hero3_
 // bandit AI
 SAR_leader_band_list = ["Bandit1_DZ"]; // the potential classes of the leader of a bandit group
 SAR_sniper_band_list = ["ori_vil_woman_bandit_4"]; // the potential classes of the snipers of a bandit group
-SAR_soldier_band_list = ["Bandit3_1", "Bandit1_3_1DZ","Bandit2_2DZ,ori_vil_woman_bandit_6","ori_vil_woman_bandit_5","ori_vil_woman_bandit_3","ori_vil_woman_bandit_2","ori_vil_woman_bandit_1","Bandit3_1","Bandit2_5DZ","Bandit2_4DZ","Bandit2_3DZ","Bandit2_2DZ","Bandit2_1DZ","Bandit1_3_2DZ","Bandit1_3_1DZ","Bandit1_3DZ","Bandit1_2DZ","Bandit1_1DZ"]; // the potential classes of the riflemen of a bandit group
+SAR_soldier_band_list = ["Bandit3_1", "Bandit1_3_1DZ","Bandit2_2DZ","ori_vil_woman_bandit_6","ori_vil_woman_bandit_5","ori_vil_woman_bandit_3","ori_vil_woman_bandit_2","ori_vil_woman_bandit_1","Bandit3_1","Bandit2_5DZ","Bandit2_4DZ","Bandit2_3DZ","Bandit2_2DZ","Bandit2_1DZ","Bandit1_3_2DZ","Bandit1_3_1DZ","Bandit1_3DZ","Bandit1_2DZ","Bandit1_1DZ"]; // the potential classes of the riflemen of a bandit group
 
 // survivor AI
 SAR_leader_surv_list = ["Hero1_5DZ","Hero2_1DZ","Hero2_2DZ","Hero2_3DZ","Hero2_4DZ","Hero2_5DZ","Hero2_10DZ"]; // the potential classes of the leaders of a survivor group
