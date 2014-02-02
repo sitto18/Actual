@@ -485,7 +485,7 @@ SAR_sold_rifleman_tools = [["ItemMap",50],["ItemCompass",30]];
 
 //potential weapon list for snipers
 // SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","Huntingrifle"];
-SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","M24","SVD_NSPU_EP1","m107","FN_FAL","FN_FAL_ANPVS4","Mk_48_DZ","M249_DZ","BAF_L85A2_RIS_Holo","G36C","G36C_camo","G36A_camo","G36K_camo","AK_47_M","AKS_74_U","M14_EP1","bizon_silenced","DMR","RPK_74","KSVK","BAF_AS50_scoped","SCAR_H_LNG_Sniper_SD"];
+SAR_sold_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","M24","SVD_NSPU_EP1","m107","FN_FAL","FN_FAL_ANPVS4","Mk_48_DZ","M249_DZ","BAF_L85A2_RIS_Holo","G36C","G36C_camo","G36A_camo","G36K_camo","AK_47_M","AKS_74_U","M14_EP1","bizon_silenced","DMR","RPK_74","BAF_AS50_scoped","SCAR_H_LNG_Sniper_SD"];
 SAR_sold_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -513,7 +513,7 @@ SAR_surv_rifleman_items = [["ItemSodaCoke",75],["FoodCanBakedBeans",60]];
 SAR_surv_rifleman_tools = [["ItemMap",50],["ItemCompass",30]];
 
 //potential weapon list for snipers
-SAR_surv_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","KSVK","m107"];
+SAR_surv_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","DMR","m107"];
 SAR_surv_sniper_pistol_list = [];   
 
 // potential item list for snipers
@@ -543,7 +543,7 @@ SAR_band_rifleman_tools = [["ItemMap",50],["ItemCompass",30],["Binocular_Vector"
 
 //potential weapon list for snipers
 // SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","Huntingrifle"];
-SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","M24","DMR","m107","BAF_AS50_scoped","SCAR_H_LNG_Sniper_SD","KSVK"];
+SAR_band_sniper_weapon_list = ["M4A1_Aim","SVD_CAMO","M24","DMR","m107","BAF_AS50_scoped","SCAR_H_LNG_Sniper_SD"];
 SAR_band_sniper_pistol_list = [];   
 
 // potential item list for snipers

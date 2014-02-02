@@ -284,5 +284,5 @@
 // 5 Troopmon
 // 5 Alexenderpackk
 // 5 "Init RE"
-1 setFuel !""setFuel"," !"z\addons\dayz_code\compile\local_setFuel.sqf" !""dayzSetFuel"" !"if (_fuel >= 1.0) then { _fuel = 1.0; };\n\n_target setFuel _fuel;" !"_vehicle setFuel 1;\nif (SAR_EXTREME_DEBUG) then {diag_log "SAR_EXTREME_DEBUG: Vehicle refueled";};"
-5 setVehicleAmmo !""setVehicleAmmo"," !"_vehicle setVehicleAmmo 1;\nif (SAR_EXTREME_DEBUG) then {diag_log "SAR EXTREME DEBUG: Vehicle new ammo";};"
+//1 setFuel !""setFuel"," !"z\addons\dayz_code\compile\local_setFuel.sqf" !""dayzSetFuel"" !"if (_fuel >= 1.0) then { _fuel = 1.0; };\n\n_target setFuel _fuel;" !"_vehicle setFuel 1;\nif (SAR_EXTREME_DEBUG) then {diag_log "SAR_EXTREME_DEBUG: Vehicle refueled";};"
+//5 setVehicleAmmo !""setVehicleAmmo"," !"_vehicle setVehicleAmmo 1;\nif (SAR_EXTREME_DEBUG) then {diag_log "SAR EXTREME DEBUG: Vehicle new ammo";};"
